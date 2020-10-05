@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Automated setup of regtest DAO - for Linux | Vuepress Docs Boilerplate</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.05bbb9a9.css" as="style"><link rel="preload" href="/assets/js/app.60478b4e.js" as="script"><link rel="preload" href="/assets/js/2.401a984c.js" as="script"><link rel="preload" href="/assets/js/19.c6ba8c13.js" as="script"><link rel="prefetch" href="/assets/js/10.a7bcd7e7.js"><link rel="prefetch" href="/assets/js/11.16c282f2.js"><link rel="prefetch" href="/assets/js/12.03005dd9.js"><link rel="prefetch" href="/assets/js/13.b3974d4f.js"><link rel="prefetch" href="/assets/js/14.6a68719d.js"><link rel="prefetch" href="/assets/js/15.491befdc.js"><link rel="prefetch" href="/assets/js/16.73dd3bba.js"><link rel="prefetch" href="/assets/js/17.f5f76e30.js"><link rel="prefetch" href="/assets/js/18.ef453353.js"><link rel="prefetch" href="/assets/js/20.7be6ce95.js"><link rel="prefetch" href="/assets/js/21.c1fdebeb.js"><link rel="prefetch" href="/assets/js/22.f6072bfe.js"><link rel="prefetch" href="/assets/js/23.a43706c4.js"><link rel="prefetch" href="/assets/js/24.aa8596b1.js"><link rel="prefetch" href="/assets/js/25.fd45b4d5.js"><link rel="prefetch" href="/assets/js/26.ce783cbb.js"><link rel="prefetch" href="/assets/js/27.993e981f.js"><link rel="prefetch" href="/assets/js/28.610c6485.js"><link rel="prefetch" href="/assets/js/29.7cead9db.js"><link rel="prefetch" href="/assets/js/3.09d69041.js"><link rel="prefetch" href="/assets/js/30.6c5ea1c4.js"><link rel="prefetch" href="/assets/js/31.af2af599.js"><link rel="prefetch" href="/assets/js/32.e6703c87.js"><link rel="prefetch" href="/assets/js/33.26f27f60.js"><link rel="prefetch" href="/assets/js/34.e9a7787a.js"><link rel="prefetch" href="/assets/js/35.6ffec1b8.js"><link rel="prefetch" href="/assets/js/36.0cc08ddf.js"><link rel="prefetch" href="/assets/js/37.6e1a2fd6.js"><link rel="prefetch" href="/assets/js/38.a19af7a0.js"><link rel="prefetch" href="/assets/js/39.9f25aeb0.js"><link rel="prefetch" href="/assets/js/4.d5ea3e2a.js"><link rel="prefetch" href="/assets/js/40.1e585f31.js"><link rel="prefetch" href="/assets/js/41.ae3522da.js"><link rel="prefetch" href="/assets/js/42.28e1b09c.js"><link rel="prefetch" href="/assets/js/43.f9a5754a.js"><link rel="prefetch" href="/assets/js/44.7c01de06.js"><link rel="prefetch" href="/assets/js/45.7d7701dd.js"><link rel="prefetch" href="/assets/js/46.f95c3091.js"><link rel="prefetch" href="/assets/js/47.61f203ed.js"><link rel="prefetch" href="/assets/js/5.915ba83b.js"><link rel="prefetch" href="/assets/js/6.d7dda977.js"><link rel="prefetch" href="/assets/js/7.2751fc7c.js"><link rel="prefetch" href="/assets/js/8.46ea08e1.js"><link rel="prefetch" href="/assets/js/9.937f8dfe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.05bbb9a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vuepress Docs Boilerplate</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/bisq/" class="sidebar-heading clickable router-link-active"><span>bisq</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/bitcoinj/" class="sidebar-heading clickable"><span>bitcoinj</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/btcd-cli4j/" class="sidebar-link">btcd-cli4j</a></li><li><a href="/config/" class="sidebar-link">config</a></li><li><a href="/docker/" class="sidebar-link">docker</a></li><li><a href="/github/" class="sidebar-link">github</a></li><li><a href="/guide/" class="sidebar-link">guide</a></li><li><a href="/libdohj/" class="sidebar-link">libdohj</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="automated-setup-of-regtest-dao-for-linux"><a href="#automated-setup-of-regtest-dao-for-linux" class="header-anchor">#</a> Automated setup of regtest DAO - for Linux</h1> <p>The goal of these helper scripts is to set up a bisq DAO from scratch. The scripts run <code>bitcoind</code> in regtest mode for you and a <code>seed node</code>, <code>alice</code> and <code>bob</code> instances.</p> <p>We assume the user is in the <code>autosetup-regtest-dao</code> directory. It is ok to move the directory, but please move it as a whole. Also <code>bitcoin-qt</code>, <code>bitcoin-cli</code>, <code>bitcoin-tx</code>, <code>jq</code> and <code>bc</code> has to be installed on the system. Do not change the shipped <code>bitcoin.conf</code> file as it will break things.</p> <h2 id="steps-to-spin-up-a-fresh-dao-we-assume-the-user-is-in-the-autosetup-regtest-dao-directory"><a href="#steps-to-spin-up-a-fresh-dao-we-assume-the-user-is-in-the-autosetup-regtest-dao-directory" class="header-anchor">#</a> Steps to spin up a fresh DAO (we assume the user is in the autosetup-regtest-dao directory):</h2> <ol><li>Set up <code>bitcoin-qt</code> to run in the <code>autosetup-regtest-dao</code> directory, it detects when the <code>bitcoin-qt</code> instance comes up and once it is ready the script queries the number of blocks. If there are less then 101 blocks (fresh start) the script generates 101 blocks for you so you have an available input that will be later used for the genesis tx creation.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>./start_bitcoind.sh
+</code></pre></div><p>Example output (note the below errors are normal and can be ignored):</p> <div class="language- extra-class"><pre class="language-text"><code>user@host:~/bin/KanoczTomas/bisq/docs/autosetup-regtest-dao$ ./start_bitcoind.sh
+error: Could not connect to the server 127.0.0.1:18443
+Make sure the bitcoind server is running and that you are connecting to the correct RPC port.
+error code: -28
+error message:
+Loading wallet...
+./generate_101_blocks.sh: found less blocks then 101, generating ...
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+./blocknotify: line 2: echo: write error: Broken pipe
+[
+  &quot;24e04970e3b55fe45efde314cc959a7baeef379d74d322bc132b723235f1e8ca&quot;,
+  &lt;truncated output for compactness&gt;
+  &quot;2d4aaa455c681b604a683437c657e23b19af0b614f5f822c4c7aecee865b5f5f&quot;
+]
+./generate_101_blocks.sh: done, exiting
+</code></pre></div><ol start="2"><li>Open a new terminal (preferably a new tab), go to the <code>bisq</code> folder and start the <code>create_genesis.sh</code> script. The script tests for a running bitcoind node in regtest, so make sure step 1 was successful.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>cd bisq
+./create_genesis.sh
+</code></pre></div><p>example output:</p> <div class="language- extra-class"><pre class="language-text"><code>user@host:~/bin/KanoczTomas/bisq/docs/autosetup-regtest-dao/bisq$ ./create_genesis.sh
+testing if bitcoind is running: bitcoind is running, all is ok!
+Please provide Alice's BSQ Address
+</code></pre></div><ol start="3"><li>We need the BSQ address of <code>Alice</code>. Go to the <code>bisq</code> directory and start the <code>Alice</code> instance. Wait until the instance starts up then go to <code>DAO -&gt; Receive</code> and copy the BSQ address. Note the address starts with a <code>B</code>. Open a new terminal and enter the commands below to start <code>Alice</code>. Then wait for the gui to start and paste the BSQ address to <code>create_genesis.sh</code> which is still running from step 2.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>cd bisq
+./alice
+</code></pre></div><ol start="4"><li>Enter the amount of BTC in the <code>create_genesis.sh</code> script you want <code>Alice</code> to receive as BSQ.
+Example output:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>user@host:~/bin/KanoczTomas/bisq/docs/autosetup-regtest-dao/bisq$ ./create_genesis.sh
+testing if bitcoind is running: bitcoind is running, all is ok!
+Please provide Alice's BSQ Address
+Bn2iUHwJQTreQaoajKwnT6h7pYF9nCWULJA
+How much BTC to turn to BSQ for Alice? (sum must be 2.5BTC)
+1
+Alice will receive 1000000.00 BSQ to Bn2iUHwJQTreQaoajKwnT6h7pYF9nCWULJA
+</code></pre></div><ol start="5"><li>We need the BSQ address of <code>Bob</code>. Go to the <code>bisq</code> directory and start the <code>Bob</code> instance. Wait until the instance starts up then go to <code>DAO -&gt; Receive</code> and copy the BSQ address. Note the address starts with a <code>B</code>. Open a new terminal and enter the commands below to start <code>Bob</code>. Then wait for the gui to start and paste the BSQ address to <code>create_genesis.sh</code> which is still running from step 2.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>cd bisq
+./bob
+</code></pre></div><ol start="6"><li>Enter the amount of BTC in the <code>create_genesis.sh</code> script you want <code>Bob</code> to receive as BSQ.
+Example output:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>tk@workbook:~/bin/KanoczTomas/bisq/docs/autosetup-regtest-dao/bisq$ ./create_genesis.sh
+testing if bitcoind is running: bitcoind is running, all is ok!
+Please provide Alice's BSQ Address
+Bn2iUHwJQTreQaoajKwnT6h7pYF9nCWULJA
+How much BTC to turn to BSQ for Alice? (sum must be 2.5BTC)
+1
+Alice will receive 1000000.00 BSQ to Bn2iUHwJQTreQaoajKwnT6h7pYF9nCWULJA
+Please provide Bob's BSQ Address
+BmoccyQEENPwxeZUdPAnDejEeTzykD9Kdbo
+How much BTC to turn to BSQ for Bob? (sum must be 2.5BTC)
+1.5
+Bob will receive 1500000.00 BSQ to BmoccyQEENPwxeZUdPAnDejEeTzykD9Kdbo
+got address 2MwNUS6czZZ8tFeFArujf1AghFZUfcJmgRx
+sending 2.5001 BTC to 2MwNUS6czZZ8tFeFArujf1AghFZUfcJmgRx
+txid is: d8c9d0caaaa69ad26e3dbe2176cd7fd48a4509b96cd902982fbc9811211cf20e
+creating genesis tx for you
+The raw genesis tx is: 020000000001010ef21c211198bc2f9802d96cb909458ad47fcd7621be3d6ed29aa6aacad0c9d80000000017160014d3316afa653bb7ca1f7bfd2395c373c979fd14ddffffffff0200e1f505000000001976a914e8884212730dd91d620b92d2e95245baf776d78b88ac80d1f008000000001976a91458d35f88e65ded63cb22a25ffda6f83a0209822b88ac0247304402204395a123c499f05bdc9b458459d97df1910feb9a43d66b7ca7e28a91c6cf19a702203ddb3fb891442bb76a2a8e267b4fec99c8a40064461556a03a799e787d08334f01210397ff7d1aa76f2fb241b0354332bb1e9be0520e744a8a2a7e5e088a92a7c09dd200000000
+Please verify if decoded tx looks ok:
+{
+  &quot;txid&quot;: &quot;a876c877de410480530f7e8fa7e34034085db4db603d30a5635610fb59e646b2&quot;,
+  &quot;hash&quot;: &quot;81923b096990db55e44730a4c3af975b1ecd995d8cbfdac939b16081249aa8bc&quot;,
+  &quot;version&quot;: 2,
+  &quot;size&quot;: 251,
+  &quot;vsize&quot;: 170,
+  &quot;weight&quot;: 677,
+  &quot;locktime&quot;: 0,
+  &quot;vin&quot;: [
+    {
+      &quot;txid&quot;: &quot;d8c9d0caaaa69ad26e3dbe2176cd7fd48a4509b96cd902982fbc9811211cf20e&quot;,
+      &quot;vout&quot;: 0,
+      &quot;scriptSig&quot;: {
+        &quot;asm&quot;: &quot;0014d3316afa653bb7ca1f7bfd2395c373c979fd14dd&quot;,
+        &quot;hex&quot;: &quot;160014d3316afa653bb7ca1f7bfd2395c373c979fd14dd&quot;
+      },
+      &quot;txinwitness&quot;: [
+        &quot;304402204395a123c499f05bdc9b458459d97df1910feb9a43d66b7ca7e28a91c6cf19a702203ddb3fb891442bb76a2a8e267b4fec99c8a40064461556a03a799e787d08334f01&quot;,
+        &quot;0397ff7d1aa76f2fb241b0354332bb1e9be0520e744a8a2a7e5e088a92a7c09dd2&quot;
+      ],
+      &quot;sequence&quot;: 4294967295
+    }
+  ],
+  &quot;vout&quot;: [
+    {
+      &quot;value&quot;: 1,
+      &quot;n&quot;: 0,
+      &quot;scriptPubKey&quot;: {
+        &quot;asm&quot;: &quot;OP_DUP OP_HASH160 e8884212730dd91d620b92d2e95245baf776d78b OP_EQUALVERIFY OP_CHECKSIG&quot;,
+        &quot;hex&quot;: &quot;76a914e8884212730dd91d620b92d2e95245baf776d78b88ac&quot;,
+        &quot;reqSigs&quot;: 1,
+        &quot;type&quot;: &quot;pubkeyhash&quot;,
+        &quot;addresses&quot;: [
+          &quot;n2iUHwJQTreQaoajKwnT6h7pYF9nCWULJA&quot;
+        ]
+      }
+    },
+    {
+      &quot;value&quot;: 1.5,
+      &quot;n&quot;: 1,
+      &quot;scriptPubKey&quot;: {
+        &quot;asm&quot;: &quot;OP_DUP OP_HASH160 58d35f88e65ded63cb22a25ffda6f83a0209822b OP_EQUALVERIFY OP_CHECKSIG&quot;,
+        &quot;hex&quot;: &quot;76a91458d35f88e65ded63cb22a25ffda6f83a0209822b88ac&quot;,
+        &quot;reqSigs&quot;: 1,
+        &quot;type&quot;: &quot;pubkeyhash&quot;,
+        &quot;addresses&quot;: [
+          &quot;moccyQEENPwxeZUdPAnDejEeTzykD9Kdbo&quot;
+        ]
+      }
+    }
+  ]
+}
+Press enter to broadcast transaction, ctrl+c otherwise
+</code></pre></div><ol start="7"><li><p>verify if the tx shown as json is ok (the sum of outputs must be 2.5 to be valid). Note the script does not check the sum of the outputs as one needs to create an invalid genesis tx as well to test things. Press <code>enter</code> if tx looks ok.</p></li> <li><p>Once confirmed the script will broadcast the genesis tx to the regtest blockchain and setup the <code>config.sh</code> file in the <code>bisq</code> directory which is used by the <code>seed_node</code>, <code>alice</code> and <code>bob</code> scripts. It populates the genesis txid and genesis block height so the instances can be launched accordingly.
+Example output:</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>... &lt;output ommited - see step above&gt;
+Press enter to broadcast transaction, ctrl+c otherwise
+Genesis txid is:
+a876c877de410480530f7e8fa7e34034085db4db603d30a5635610fb59e646b2
+Mining genesis tx for you
+genesis_block is 39249aab4e42c85e14f59517ec6b45305fdc7d660315c6602aab1a1b7b96cd3b
+genesis_height is 102
+your conf file was modified accordingly
+dao setup done
+</code></pre></div><ol start="9"><li>Start the <code>seed</code> node in full DAO node using the <code>seed_node</code> script. Make sure you are in the <code>bisq</code> directory.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>cd bisq
+./seed_node
+</code></pre></div><ol start="10"><li>Restart <code>Alice</code> and <code>Bob</code> you should see BSQ visible on the <code>DAO</code> page. Note the <code>seed node</code> is a full node and <code>alice</code>/<code>bob</code> are lite nodes in this setup.</li></ol> <h2 id="continuing-work-on-the-existing-setup"><a href="#continuing-work-on-the-existing-setup" class="header-anchor">#</a> Continuing work on the existing setup</h2> <ol><li>Just run <code>start_bitcoind.sh</code> script and spin up <code>seed node</code>, <code>alice</code> and <code>bob</code> with respected scripts.</li></ol> <h2 id="clearing-the-dao-for-a-fresh-start"><a href="#clearing-the-dao-for-a-fresh-start" class="header-anchor">#</a> Clearing the DAO - for a fresh start</h2> <ol><li>Run <code>clean.sh</code>. It will clear the bitcoind files and bisq files from <code>~/.local/share/</code> directory. Make sure your <code>bitcoind/bitcoin-qt</code> is stopped before running.</li></ol> <div class="language- extra-class"><pre class="language-text"><code>user@host:~/bin/KanoczTomas/bisq/docs/autosetup-regtest-dao$ ./clean.sh
+DANGER! This will nuke your bitcoin regtest dir and bisq seed, alice and bob regtest dirs as well!
+Press Enter to continue, otherwise ctrl+c
+cleaned bitcoind home and bisq seed, alice, bob instances. The conf file for bisq was reset to dao=false
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.60478b4e.js" defer></script><script src="/assets/js/2.401a984c.js" defer></script><script src="/assets/js/19.c6ba8c13.js" defer></script>
+  </body>
+</html>

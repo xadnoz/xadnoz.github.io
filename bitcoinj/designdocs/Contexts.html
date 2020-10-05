@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Design of API contexts | Vuepress Docs Boilerplate</title>
+    <meta name="generator" content="VuePress 1.6.0">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.05bbb9a9.css" as="style"><link rel="preload" href="/assets/js/app.60478b4e.js" as="script"><link rel="preload" href="/assets/js/2.401a984c.js" as="script"><link rel="preload" href="/assets/js/38.a19af7a0.js" as="script"><link rel="prefetch" href="/assets/js/10.a7bcd7e7.js"><link rel="prefetch" href="/assets/js/11.16c282f2.js"><link rel="prefetch" href="/assets/js/12.03005dd9.js"><link rel="prefetch" href="/assets/js/13.b3974d4f.js"><link rel="prefetch" href="/assets/js/14.6a68719d.js"><link rel="prefetch" href="/assets/js/15.491befdc.js"><link rel="prefetch" href="/assets/js/16.73dd3bba.js"><link rel="prefetch" href="/assets/js/17.f5f76e30.js"><link rel="prefetch" href="/assets/js/18.ef453353.js"><link rel="prefetch" href="/assets/js/19.c6ba8c13.js"><link rel="prefetch" href="/assets/js/20.7be6ce95.js"><link rel="prefetch" href="/assets/js/21.c1fdebeb.js"><link rel="prefetch" href="/assets/js/22.f6072bfe.js"><link rel="prefetch" href="/assets/js/23.a43706c4.js"><link rel="prefetch" href="/assets/js/24.aa8596b1.js"><link rel="prefetch" href="/assets/js/25.fd45b4d5.js"><link rel="prefetch" href="/assets/js/26.ce783cbb.js"><link rel="prefetch" href="/assets/js/27.993e981f.js"><link rel="prefetch" href="/assets/js/28.610c6485.js"><link rel="prefetch" href="/assets/js/29.7cead9db.js"><link rel="prefetch" href="/assets/js/3.09d69041.js"><link rel="prefetch" href="/assets/js/30.6c5ea1c4.js"><link rel="prefetch" href="/assets/js/31.af2af599.js"><link rel="prefetch" href="/assets/js/32.e6703c87.js"><link rel="prefetch" href="/assets/js/33.26f27f60.js"><link rel="prefetch" href="/assets/js/34.e9a7787a.js"><link rel="prefetch" href="/assets/js/35.6ffec1b8.js"><link rel="prefetch" href="/assets/js/36.0cc08ddf.js"><link rel="prefetch" href="/assets/js/37.6e1a2fd6.js"><link rel="prefetch" href="/assets/js/39.9f25aeb0.js"><link rel="prefetch" href="/assets/js/4.d5ea3e2a.js"><link rel="prefetch" href="/assets/js/40.1e585f31.js"><link rel="prefetch" href="/assets/js/41.ae3522da.js"><link rel="prefetch" href="/assets/js/42.28e1b09c.js"><link rel="prefetch" href="/assets/js/43.f9a5754a.js"><link rel="prefetch" href="/assets/js/44.7c01de06.js"><link rel="prefetch" href="/assets/js/45.7d7701dd.js"><link rel="prefetch" href="/assets/js/46.f95c3091.js"><link rel="prefetch" href="/assets/js/47.61f203ed.js"><link rel="prefetch" href="/assets/js/5.915ba83b.js"><link rel="prefetch" href="/assets/js/6.d7dda977.js"><link rel="prefetch" href="/assets/js/7.2751fc7c.js"><link rel="prefetch" href="/assets/js/8.46ea08e1.js"><link rel="prefetch" href="/assets/js/9.937f8dfe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.05bbb9a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vuepress Docs Boilerplate</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="outbound-link-title" role="img" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><title id="outbound-link-title">(opens new window)</title> <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/bisq/" class="sidebar-heading clickable"><span>bisq</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/bitcoinj/" class="sidebar-heading clickable router-link-active"><span>bitcoinj</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/btcd-cli4j/" class="sidebar-link">btcd-cli4j</a></li><li><a href="/config/" class="sidebar-link">config</a></li><li><a href="/docker/" class="sidebar-link">docker</a></li><li><a href="/github/" class="sidebar-link">github</a></li><li><a href="/guide/" class="sidebar-link">guide</a></li><li><a href="/libdohj/" class="sidebar-link">libdohj</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="design-of-api-contexts"><a href="#design-of-api-contexts" class="header-anchor">#</a> Design of API contexts</h1> <p>This design doc describes the Context class that is new in 0.13.</p> <h2 id="goals"><a href="#goals" class="header-anchor">#</a> Goals</h2> <ul><li>To centralise various bits of configuration that are presently duplicated throughout the API, such as directories for
+storing files, the depth at which a tx is considered un-reorgable, the chosen network parameters and so on.</li> <li>To simplify bitcoinj programming in future.</li> <li>To avoid the temptation to overload NetworkParameters with tweakable bits and pieces of misc configuration.</li> <li>Unblock various bits of API evolution that are currently made difficult by the desire to avoid too many source code
+changes by developers.</li></ul> <h2 id="background"><a href="#background" class="header-anchor">#</a> Background</h2> <p>Since the very first version bitcoinj has had the concept of &quot;network parameters&quot;: a class that wrapped various
+constants and magic numbers that distinguish the Bitcoin main network from the test network, and later, from settings
+meant only for unit tests and local regression testing.</p> <p>However unlike many APIs, we have never had a more general notion of context and as the library has grown we have
+ended up with an often confusing mishmash of duplicate settings and odd dependencies between objects. For example
+several parts of the library want to throw away data once a transaction is confirmed enough that we don't expect it
+to ever be re-orgd out of the chain, but there's no agreement on how deep that should be. The Wallet stores files, as
+does the block store, as does Orchid (Tor support), but each component must be told where to put this data individually.
+The problem gets worse on Android, where there are no JAR files and data must be shipped as external files. On this
+platform components that want to load data files must be configured with a path to their files individually and
+there's no central list of what components need this.</p> <p>Another problem is that in a few places, we have APIs that are in wide usage but need to start accepting an explicit
+component to allow the underlying code to evolve. Top of the list is TransactionConfidence. Consider
+TransactionConfidence.getDepthInBlocks(). This method takes no parameters and thus practically requires that the
+confidence object for every transaction in a wallet be touched on every single block in order to update its internal
+counter. A better approach would be for it to just record the height it appeared at and then take an AbstractBlockChain
+as a parameter (and/or explicit height) then do the subtraction. But often this method is called in places far away
+from the last reference to a block chain and so this will be a painful API change. Ideally we could spread it out over
+a release or two, to give developers time to update their code.</p> <p>An even bigger issue is Transaction.getConfidence() itself. We would like to rewrite the Wallet so it no longer stores
+Transaction objects at all. But this would be a major API break, because apps often want to know about the confidence
+of a transaction and currently the only way to obtain this is via the getConfidence() method. The TxConfidenceTable class
+(renamed from MemoryPool) acts as a global map of txhash to confidence object, but we can't adjust the prototype of
+Transaction.getConfidence() to take one without breaking lots of code.</p> <p>This proliferation of global variables makes it harder for developers to use multiple instances of bitcoinj
+simultaneously, for example, to do cross-chain trading of different cryptocurrencies against each other.</p> <p>Finally, several bitcoinj objects currently need to be plugged together in ways that aren't always obvious for full
+functionality to work. The constructors try to guide the developer but it's still a common source of mistakes.</p> <p>We can resolve these problems by introducing a notion of a global Context object, used in the same places and ways as
+NetworkParameters is today.</p> <h2 id="context-object"><a href="#context-object" class="header-anchor">#</a> Context object</h2> <p>The Context class is very simple. It is an immutable class that simply holds configuration data and references to other
+objects. For now, we do not allow on-the-fly reconfiguration of the data stored within it. This is to simplify the
+implementation code.</p> <h2 id="alternatives-considered"><a href="#alternatives-considered" class="header-anchor">#</a> Alternatives considered</h2> <p>Some code bases, when faced with similar problems to the above, use a dependency injection container. These pieces
+of software effectively replace the &quot;new&quot; keyword and handle all object creation themselves, then wire objects together
+based on annotations and centralised, explicit configuration.</p> <p>Dependency injection would seem to be an attractive solution, but:</p> <ul><li>Experience of using Guice inside Google leads me to believe it will result in confusing code that breaks IDE navigation
+features and is hostile to the inexperienced code reader.</li> <li>Guice effectively changes the Java language and that makes it harder for people to contribute. There may be DI
+frameworks that are less aggressive, but I don't know of any.</li> <li>DI often relies heavily on reflection and even runtime code synthesis, which we wish to avoid for performance reasons
+and to avoid complicating ProGuard configuration and transpilation.</li> <li>DI is effectively just a complicated and indirect means of having a global context object: doing it directly makes the
+code clearer and avoids the need for developers to learn new things.</li></ul> <h2 id="transition-plan"><a href="#transition-plan" class="header-anchor">#</a> Transition plan</h2> <p>NetworkParameters appears everywhere in the bitcoinj API, and so introducing Context will have a major impact on it
+as well. We aim to keep API churn under control, to avoid losing developers across difficult upgrades. As such,
+Context will be phased in gradually over one or two releases.</p> <p>We will follow these stages:</p> <ol><li>Context starts out by wrapping NetworkParameters, TxConfidenceTable and the &quot;event horizon&quot; (the number of blocks
+after which we assume re-orgs cannot happen).</li> <li>The construction of a Context object puts a reference to itself into a thread local storage slot. A static method
+is provided which retrieves this, as well as another that either retrieves <em>or creates</em> a new Context. This second
+method is placed in the constructors of key classes like the Wallet or the block chain, and provides backwards
+compatibility for developers. A log message is printed advising developers to update their code to create a Context
+themselves. Attempting to use two instances of the library with different objects or NetworkParameters from the same
+thread may have complications or not work properly during this stage.</li> <li>Classes that currently take NetworkParameters are augmented with new constructors that take Contexts instead. The
+old c'tors simply check the NetworkParameters they are given matches the Context's own view and then call into the
+new c'tors. An exception is thrown if they don't match.</li> <li>Release notes describe how to set a context and propagate it between threads. Developers can start migration in the
+0.13 release.</li> <li>Internally, we start passing contexts through to objects that want one explicitly rather than relying on the thread
+local storage slot.</li> <li>We mark constructors that take NetworkParameters as deprecated with the javadocs changing to point devs to the
+Context-taking equivalents.</li> <li>In some future release, the deprecated methods are eventually removed, along with the Context thread local storage
+slot and automated cross-thread propagation magic.</li></ol> <p>In parallel, global configuration will keep being moved into the Context class to make it more useful.</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.60478b4e.js" defer></script><script src="/assets/js/2.401a984c.js" defer></script><script src="/assets/js/38.a19af7a0.js" defer></script>
+  </body>
+</html>
